@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="48574" started-at="2021-03-27T09:57:37 IST" finished-at="2021-03-27T09:58:25 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="48574" started-at="2021-03-27T09:57:37 IST" finished-at="2021-03-27T09:58:25 IST">
+      <class name="com.automation.DevOpsAssignment.UserAccountTest">
+        <test-method status="PASS" signature="initilizePages()[pri:0, instance:com.automation.DevOpsAssignment.UserAccountTest@33f88ab]" name="initilizePages" is-config="true" duration-ms="11" started-at="2021-03-27T09:57:50 IST" finished-at="2021-03-27T09:57:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizePages -->
+        <test-method status="PASS" signature="createNewAccount()[pri:0, instance:com.automation.DevOpsAssignment.UserAccountTest@33f88ab]" name="createNewAccount" duration-ms="32472" started-at="2021-03-27T09:57:50 IST" finished-at="2021-03-27T09:58:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewAccount -->
+        <test-method status="PASS" signature="verifyAccountServicesList()[pri:0, instance:com.automation.DevOpsAssignment.UserAccountTest@33f88ab]" name="verifyAccountServicesList" duration-ms="2791" started-at="2021-03-27T09:58:22 IST" finished-at="2021-03-27T09:58:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountServicesList -->
+      </class> <!-- com.automation.DevOpsAssignment.UserAccountTest -->
+      <class name="com.automation.DevOpsAssignment.RegistrationTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.automation.DevOpsAssignment.RegistrationTest@2833cc44]" name="launchBrowser" is-config="true" duration-ms="5059" started-at="2021-03-27T09:57:31 IST" finished-at="2021-03-27T09:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:com.automation.DevOpsAssignment.RegistrationTest@2833cc44]" name="launchApplication" is-config="true" duration-ms="4084" started-at="2021-03-27T09:57:37 IST" finished-at="2021-03-27T09:57:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="initilizePages()[pri:0, instance:com.automation.DevOpsAssignment.RegistrationTest@2833cc44]" name="initilizePages" is-config="true" duration-ms="29" started-at="2021-03-27T09:57:41 IST" finished-at="2021-03-27T09:57:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizePages -->
+        <test-method status="PASS" signature="verifyUserRegistration()[pri:0, instance:com.automation.DevOpsAssignment.RegistrationTest@2833cc44]" name="verifyUserRegistration" duration-ms="9156" started-at="2021-03-27T09:57:41 IST" finished-at="2021-03-27T09:57:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserRegistration -->
+        <test-method status="PASS" signature="killSession()[pri:0, instance:com.automation.DevOpsAssignment.RegistrationTest@2833cc44]" name="killSession" is-config="true" duration-ms="2062" started-at="2021-03-27T09:58:30 IST" finished-at="2021-03-27T09:58:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killSession -->
+      </class> <!-- com.automation.DevOpsAssignment.RegistrationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
