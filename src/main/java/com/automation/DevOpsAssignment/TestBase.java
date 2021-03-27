@@ -22,10 +22,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	
 public static WebDriver driver;
-public String browserName = "cloud";
+public ReadPropertiesData readPropertiesData;
+//public String browserName = "cloud";
 	
 	@BeforeSuite
-	public void launchBrowser() throws MalformedURLException, InterruptedException {
+	public void launchBrowser() throws Exception {
+		readPropertiesData = new ReadPropertiesData();
+		String browserName = readPropertiesData.readPropertyValue("browser");
 		if(browserName.equals("chrome")) {
 
 			WebDriverManager.chromedriver().setup();

@@ -53,6 +53,12 @@
 			<version>4.3.1</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.13.8</version>
+		</dependency>
 
 	</dependencies>
 
@@ -73,10 +79,8 @@
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.8.0</version>
-					<!-- <configuration>
-						<fork>true</fork>
-						<executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home</executable>
-					</configuration> -->
+					<!-- <configuration> <fork>true</fork> <executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home</executable> 
+						</configuration> -->
 				</plugin>
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>

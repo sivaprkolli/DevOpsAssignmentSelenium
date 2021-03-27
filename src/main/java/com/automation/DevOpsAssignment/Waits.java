@@ -47,6 +47,6 @@ public class Waits {
 					.withMessage("Wait message")
 					.ignoring(NoSuchElementException.class)
 					.ignoring(StaleElementReferenceException.class);
-			 fWait.until(ExpectedConditions.visibilityOfAllElements(elements));
+		 fWait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 }
