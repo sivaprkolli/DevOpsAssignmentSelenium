@@ -1,14 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 87.932 s <<< FAILURE! - in TestSuite
-createNewAccount(com.automation.DevOpsAssignment.UserAccountTest)  Time elapsed: 34.61 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for text ('Account Opened!') to be present in element [[FirefoxDriver: firefox on MAC (385381b1-fb05-784f-9381-6ca4e0a16337)] -> xpath: //div/h1] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'apples-MacBook-Pro.local', ip: '192.168.1.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 4205, moz:profile: /var/folders/4k/3vyfypg10rv..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.3.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 385381b1-fb05-784f-9381-6ca4e0a16337
-	at com.automation.DevOpsAssignment.UserAccountTest.createNewAccount(UserAccountTest.java:48)
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 66.208 s <<< FAILURE! - in TestSuite
+verifyTableDataAndPrintOnConsole(com.automation.DevOpsAssignment.AccountOverviewTest)  Time elapsed: 5.356 s  <<< FAILURE!
+java.util.MissingFormatArgumentException: Format specifier '%-18s'
+	at com.automation.DevOpsAssignment.AccountOverviewTest.verifyTableDataAndPrintOnConsole(AccountOverviewTest.java:54)
 

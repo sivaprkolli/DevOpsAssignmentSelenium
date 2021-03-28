@@ -5,6 +5,7 @@
     <classes>
       <class name="com.automation.DevOpsAssignment.RegistrationTest"/>
       <class name="com.automation.DevOpsAssignment.UserAccountTest"/>
+      <class name="com.automation.DevOpsAssignment.AccountOverviewTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

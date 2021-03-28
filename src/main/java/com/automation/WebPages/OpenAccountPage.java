@@ -35,6 +35,8 @@ public class OpenAccountPage {
 		
 	}) WebElement openNewAccountButton; 
 	
+	@FindBy(css = "#newAccountId") WebElement newAccountNumber;
+	
 	
 	public void createAnAccount(String openNewAccount, String account) {
 		waits.fluentWait(accountTypesDropDown);
@@ -59,5 +61,9 @@ public class OpenAccountPage {
 	public String getTextOpenAccountSuccessMessage(String data) {
 		waits.waitForTextPresent(accountOpenSUccessMessage, data);
 		return accountOpenSUccessMessage.getText();
+	}
+	
+	public String getNewAccountNumber() {
+		return actions.getTextOfTheElement(newAccountNumber);
 	}
 }

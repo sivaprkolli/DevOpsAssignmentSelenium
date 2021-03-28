@@ -30,6 +30,10 @@ public class Waits {
 		wait.until(ExpectedConditions.textToBePresentInElement(element, data));
 	}
 	
+	public void waitForAlertExists() {
+		wait.until(ExpectedConditions.alertIsPresent());
+	}
+	
 	public void fluentWait(WebElement element) {
 		 fWait = new FluentWait<WebDriver>(driver)
 				.pollingEvery(Duration.ofSeconds(5))

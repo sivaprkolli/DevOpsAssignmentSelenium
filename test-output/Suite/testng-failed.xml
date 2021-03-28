@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.automation.DevOpsAssignment.UserAccountTest">
+      <class name="com.automation.DevOpsAssignment.AccountOverviewTest">
         <methods>
-          <include name="initilizePages"/>
+          <include name="initializePages"/>
+          <include name="verifyTableDataAndPrintOnConsole"/>
           <include name="launchApplication"/>
-          <include name="createNewAccount"/>
           <include name="launchBrowser"/>
           <include name="killSession"/>
         </methods>
-      </class> <!-- com.automation.DevOpsAssignment.UserAccountTest -->
+      </class> <!-- com.automation.DevOpsAssignment.AccountOverviewTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

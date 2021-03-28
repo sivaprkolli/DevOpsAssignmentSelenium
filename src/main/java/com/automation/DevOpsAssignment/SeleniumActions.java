@@ -74,5 +74,18 @@ public class SeleniumActions {
 		Actions mouseACtions = new Actions(driver);
 		mouseACtions.moveToElement(element).build().perform();
 	}
+	
+	public String getTextOfTheElement(WebElement element) {
+		String text = null;
+		try {
+			waits.fluentWait(element);
+			text = element.getText();
+		}catch (NoSuchElementException ne) {
+			ne.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return text;
+	}
 
 }

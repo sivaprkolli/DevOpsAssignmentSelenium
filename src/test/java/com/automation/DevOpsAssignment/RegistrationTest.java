@@ -23,6 +23,7 @@ public class RegistrationTest extends TestBase{
 	
 	@Test
 	public void verifyUserRegistration() {
+		homePage.acceptAlertOnHomePage();
 		homePage.navigateToSignUpPage();
 		int rn = CommonFunctions.randomNumber();
 		signUpPage.userRegistration("Siva", "Test", "Hyderabad", "Hyderabad", "TG", "500072", "123456789", "123456789", "Siva"+rn+"Automation", "selenium", "selenium");
