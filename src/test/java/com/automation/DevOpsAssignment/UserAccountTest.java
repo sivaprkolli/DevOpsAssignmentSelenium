@@ -23,28 +23,28 @@ public class UserAccountTest extends TestBase{
 	}
 	
 	//@BeforeClass
-	public void loginAsUser() {
-		signUpPage.login("Selenium778Automation", "selenium");
+	public void loginAsUser() throws Exception {
+		signUpPage.login(signUpPage.getUserName(), readPropertiesData.readPropertyValue("password"));
 	}
 	
 	@Test
 	public void verifyAccountServicesList() {
 		List<String> expectedAccountServices = new ArrayList<String>();
-		expectedAccountServices.add("Open New Account");
-		expectedAccountServices.add("Accounts Overview");
-		expectedAccountServices.add("Transfer Funds");
-		expectedAccountServices.add("Bill Pay");
-		expectedAccountServices.add("Find Transactions");
-		expectedAccountServices.add("Update Contact Info");
-		expectedAccountServices.add("Request Loan");
-		expectedAccountServices.add("Log Out");
+		expectedAccountServices.add(TestConstants.OPEN_NEW_ACCOUNT);
+		expectedAccountServices.add(TestConstants.ACCOUNTS_OVERVIEW);
+		expectedAccountServices.add(TestConstants.TRANSFER_FUNDS);
+		expectedAccountServices.add(TestConstants.BILL_PAY);
+		expectedAccountServices.add(TestConstants.FIND_TRANSACTIONS);
+		expectedAccountServices.add(TestConstants.UPDATE_CONTACT_INFO);
+		expectedAccountServices.add(TestConstants.REQUEST_LOAN);
+		expectedAccountServices.add(TestConstants.LOG_OUT);
 		Assert.assertTrue(accountPage.getAccountServicesList().equals(expectedAccountServices));
 	}	
 	
 	@Test 
 	public void createNewAccount() {
 		accountPage.naviagetToOpenNewAccount();
-		openAccountPage.createAnAccount("Open New Account", "SAVINGS");
-		Assert.assertEquals(openAccountPage.getTextOpenAccountSuccessMessage("Account Opened!"), "Account Opened!");
+		openAccountPage.createAnAccount("Open New Account", TestConstants.SAVINGS);
+		Assert.assertEquals(openAccountPage.getTextOpenAccountSuccessMessage("Account Opened!"), TestConstants.ACCOUNT_OPENED);
 	}
 }

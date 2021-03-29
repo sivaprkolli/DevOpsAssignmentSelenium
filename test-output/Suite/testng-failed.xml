@@ -6,8 +6,8 @@
       <class name="com.automation.DevOpsAssignment.AccountOverviewTest">
         <methods>
           <include name="initializePages"/>
-          <include name="verifyTableDataAndPrintOnConsole"/>
           <include name="launchApplication"/>
+          <include name="verifyAccountOverviewHeading"/>
           <include name="launchBrowser"/>
           <include name="killSession"/>
         </methods>

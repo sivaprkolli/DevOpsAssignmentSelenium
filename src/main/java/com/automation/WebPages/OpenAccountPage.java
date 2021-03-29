@@ -41,15 +41,13 @@ public class OpenAccountPage {
 	public void createAnAccount(String openNewAccount, String account) {
 		waits.fluentWait(accountTypesDropDown);
 		actions.selectValueFromTheDropDownUsingVisibleText(accountTypesDropDown, account); 
-		
-		//actions.jsClickOnElement(openNewAccountButton);
 		actions.moveToElementOnly(openNewAccountButton);
 		actions.clickOnElement(openNewAccountButton);
 		
+		//Temporarily used, locator issue 
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		if(driver.findElements(By.cssSelector("input.button")).size() > 0) {

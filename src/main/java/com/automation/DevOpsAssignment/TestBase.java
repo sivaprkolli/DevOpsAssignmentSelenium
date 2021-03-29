@@ -23,7 +23,6 @@ public class TestBase {
 	
 public static WebDriver driver;
 public ReadPropertiesData readPropertiesData;
-//public String browserName = "cloud";
 	
 	@BeforeSuite
 	public void launchBrowser() throws Exception {
@@ -46,7 +45,7 @@ public ReadPropertiesData readPropertiesData;
 			
 		}else if(browserName.equals("safari")) {
 			driver = new SafariDriver();
-		}else if(browserName.equals("cloud")) {
+		}else if(browserName.equals("cloud-chrome")) {
 			new DesiredCapabilities();
 			DesiredCapabilities dc = DesiredCapabilities.chrome();
 			dc.setCapability("platform", Platform.MAC);
@@ -55,7 +54,26 @@ public ReadPropertiesData readPropertiesData;
 			dc.setCapability("build", "ParaBank Automation");
 			driver = new RemoteWebDriver(new URL("http://siva266:7Wfwz8qNKAn9X4XyNTXE@hub.browserstack.com:80/wd/hub"), dc);
 			
+		}else if(browserName.equals("cloud-firefox")) {
+			new DesiredCapabilities();
+			DesiredCapabilities dc = DesiredCapabilities.firefox();
+			dc.setCapability("platform", Platform.WINDOWS);
+			dc.setCapability("name", "ParaBank Test");
+			dc.setCapability("project", "DevOps Assignment");
+			dc.setCapability("build", "ParaBank Automation");
+			driver = new RemoteWebDriver(new URL("http://siva266:7Wfwz8qNKAn9X4XyNTXE@hub.browserstack.com:80/wd/hub"), dc);
+			
+		}else if(browserName.equals("cloud-safari")) {
+			new DesiredCapabilities();
+			DesiredCapabilities dc = DesiredCapabilities.safari();
+			dc.setCapability("platform", Platform.MAC);
+			dc.setCapability("name", "ParaBank Test");
+			dc.setCapability("project", "DevOps Assignment");
+			dc.setCapability("build", "ParaBank Automation");
+			driver = new RemoteWebDriver(new URL("http://siva266:7Wfwz8qNKAn9X4XyNTXE@hub.browserstack.com:80/wd/hub"), dc);
+			
 		}
+		
 	}
 	
 	@BeforeTest

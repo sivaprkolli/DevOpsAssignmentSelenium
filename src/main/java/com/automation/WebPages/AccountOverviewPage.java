@@ -28,6 +28,7 @@ public class AccountOverviewPage {
 	@FindBy(css = "#accountTable > tbody > tr[ng-repeat='account in accounts'] > td >a") List<WebElement> accountNumbers;
 	@FindBy(css = "#accountTable > tbody > tr[ng-repeat='account in accounts'] > td") List<WebElement> numberOfRowsInTable;
 	@FindBy(css = "#accountTable > thead > tr > th") List<WebElement> numberOfColumnsInTable;
+	@FindBy(css = ".title") WebElement headingOfThePage;
 	
 	
 	public void openAccountOverview() {
@@ -63,5 +64,9 @@ public class AccountOverviewPage {
 		List<String> rowWiseData = new ArrayList<String>();
 		rowWiseData.add(driver.findElement(By.xpath("//*[@id='accountTable']/tbody/tr/td/a[text()='"+accountNumber+"']/../../td")).getText());
 		return rowWiseData;
+	}
+	
+	public String getHeadingOfAccountOverview() {
+		return actions.getTextOfTheElement(headingOfThePage);
 	}
 }

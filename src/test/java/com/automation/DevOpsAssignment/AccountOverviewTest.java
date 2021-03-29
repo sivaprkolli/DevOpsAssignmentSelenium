@@ -48,4 +48,9 @@ public class AccountOverviewTest extends TestBase {
 		//System.out.println(CommonFunctions.formatAsTable(table));
 	}
 
+	@Test
+	public void verifyAccountOverviewHeading() {
+		String heading = accountOverviewPage.getHeadingOfAccountOverview();
+		Assert.assertEquals(heading, "Account Overview");
+	}
 }

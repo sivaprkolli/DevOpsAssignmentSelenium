@@ -63,4 +63,10 @@ public class SignUpPage {
 		passwordLoginInput.submit();
 	}
 	
+	public String getUserName() {
+		String[] fullName = getTextOfSuccessfullRegistration().split(" ");
+		String userName = fullName[1];
+		return userName;
+	}
+	
 }

@@ -5,13 +5,34 @@
     <classes>
       <class name="com.automation.DevOpsAssignment.AccountOverviewTest">
         <methods>
+          <include name="verifyAccountOverview"/>
           <include name="initializePages"/>
           <include name="verifyTableDataAndPrintOnConsole"/>
           <include name="launchApplication"/>
+          <include name="verifyAccountOverviewHeading"/>
           <include name="launchBrowser"/>
           <include name="killSession"/>
         </methods>
       </class> <!-- com.automation.DevOpsAssignment.AccountOverviewTest -->
+      <class name="com.automation.DevOpsAssignment.RegistrationTest">
+        <methods>
+          <include name="initilizePages"/>
+          <include name="launchApplication"/>
+          <include name="verifyUserRegistration"/>
+          <include name="launchBrowser"/>
+          <include name="killSession"/>
+        </methods>
+      </class> <!-- com.automation.DevOpsAssignment.RegistrationTest -->
+      <class name="com.automation.DevOpsAssignment.UserAccountTest">
+        <methods>
+          <include name="initilizePages"/>
+          <include name="launchApplication"/>
+          <include name="createNewAccount"/>
+          <include name="verifyAccountServicesList"/>
+          <include name="launchBrowser"/>
+          <include name="killSession"/>
+        </methods>
+      </class> <!-- com.automation.DevOpsAssignment.UserAccountTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
