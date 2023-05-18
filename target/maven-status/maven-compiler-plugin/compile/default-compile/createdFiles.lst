@@ -1,9 +1,0 @@
-com/automation/WebPages/AccountPage.class
-com/automation/WebPages/OpenAccountPage.class
-com/automation/WebPages/HomePage.class
-com/automation/DevOpsAssignment/Waits.class
-com/automation/DevOpsAssignment/SeleniumActions.class
-com/automation/DevOpsAssignment/ReadPropertiesData.class
-com/automation/WebPages/SignUpPage.class
-com/automation/DevOpsAssignment/CommonFunctions.class
-com/automation/DevOpsAssignment/TestBase.class
