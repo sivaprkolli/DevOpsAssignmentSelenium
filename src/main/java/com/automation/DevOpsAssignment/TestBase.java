@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -73,7 +74,14 @@ public ReadPropertiesData readPropertiesData;
 			driver = new RemoteWebDriver(new URL("http://siva266:7Wfwz8qNKAn9X4XyNTXE@hub.browserstack.com:80/wd/hub"), dc);
 			
 		}
-		
+		else if(browserName.equals("docker-chrome")) {
+			ChromeOptions chromeOptions = new ChromeOptions();
+			DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+			desiredCapabilities.setCapability("browserName", "chrome");
+			chromeOptions.merge(desiredCapabilities);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
+
+		}
 	}
 	
 	@BeforeTest
