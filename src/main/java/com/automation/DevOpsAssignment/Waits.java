@@ -12,26 +12,27 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Waits {
-	public WebDriverWait wait;
+	public WebDriverWait wdWait;
 	public FluentWait<WebDriver> fWait;
 	WebDriver driver;
 	
 	
 	public Waits(WebDriver driver) {
-		wait = new WebDriverWait(driver, 20);
+
 		this.driver = driver;
+		wdWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 	
 	public void waitForElementClickable(WebElement element) {
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+		wdWait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	public void waitForTextPresent(WebElement element, String data) {
-		wait.until(ExpectedConditions.textToBePresentInElement(element, data));
+		wdWait.until(ExpectedConditions.textToBePresentInElement(element, data));
 	}
 	
 	public void waitForAlertExists() {
-		wait.until(ExpectedConditions.alertIsPresent());
+		wdWait.until(ExpectedConditions.alertIsPresent());
 	}
 	
 	public void fluentWait(WebElement element) {

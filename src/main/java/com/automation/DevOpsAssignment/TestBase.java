@@ -12,7 +12,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -48,7 +47,7 @@ public ReadPropertiesData readPropertiesData;
 			driver = new SafariDriver();
 		}else if(browserName.equals("cloud-chrome")) {
 			new DesiredCapabilities();
-			DesiredCapabilities dc = DesiredCapabilities.chrome();
+			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("platform", Platform.MAC);
 			dc.setCapability("name", "ParaBank Test");
 			dc.setCapability("project", "DevOps Assignment");
@@ -57,7 +56,7 @@ public ReadPropertiesData readPropertiesData;
 			
 		}else if(browserName.equals("cloud-firefox")) {
 			new DesiredCapabilities();
-			DesiredCapabilities dc = DesiredCapabilities.firefox();
+			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("platform", Platform.WINDOWS);
 			dc.setCapability("name", "ParaBank Test");
 			dc.setCapability("project", "DevOps Assignment");
@@ -66,7 +65,7 @@ public ReadPropertiesData readPropertiesData;
 			
 		}else if(browserName.equals("cloud-safari")) {
 			new DesiredCapabilities();
-			DesiredCapabilities dc = DesiredCapabilities.safari();
+			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("platform", Platform.MAC);
 			dc.setCapability("name", "ParaBank Test");
 			dc.setCapability("project", "DevOps Assignment");
